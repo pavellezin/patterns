@@ -1,8 +1,6 @@
 package pro.paullezin.patterns.strategy;
 
-import pro.paullezin.patterns.strategy.model.Duck;
-import pro.paullezin.patterns.strategy.model.MallardDuck;
-import pro.paullezin.patterns.strategy.model.SelezenDuck;
+import pro.paullezin.patterns.strategy.model.*;
 
 public class View {
     public static void main(String[] args) {
@@ -10,9 +8,11 @@ public class View {
         mallard.display();
         mallard.performQuack();
         mallard.performFly();
+        mallard.swim();
         Duck selezen = new SelezenDuck();
         selezen.display();
-        selezen.performQuack();;
+        selezen.performQuack();
         selezen.performFly();
+        selezen.swim();
     }
 }

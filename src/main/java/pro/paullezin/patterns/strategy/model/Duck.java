@@ -1,7 +1,6 @@
 package pro.paullezin.patterns.strategy.model;
 
-import pro.paullezin.patterns.strategy.util.FlyBehavior;
-import pro.paullezin.patterns.strategy.util.QuackBehavior;
+import pro.paullezin.patterns.strategy.util.*;
 
 public abstract class Duck {
     FlyBehavior flyBehavior;
@@ -20,7 +19,8 @@ public abstract class Duck {
     public void performQuack() {
         quackBehavior.quack();
     }
-    public void swim(){
+
+    public void swim() {
         System.out.println("All ducks float");
     }
 
